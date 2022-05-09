@@ -2,8 +2,8 @@
 
 <script>
 export default {
-  name: 'HomeView',
+  name: 'Navbar',
 };
 </script>
 
-<style lang="sss" scoped></style>
+<router-link to="/male">Male</router-link>

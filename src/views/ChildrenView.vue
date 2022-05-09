@@ -2,7 +2,7 @@
 
 <script>
 export default {
-  name: 'HomeView',
+  name: 'ChildrenView',
 };
 </script>
 

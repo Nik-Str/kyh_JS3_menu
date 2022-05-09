@@ -2,8 +2,8 @@
 
 <script>
 export default {
-  name: 'HomeView',
+  name: 'Footer',
 };
 </script>
 
-<style lang="sss" scoped></style>
+<style></style>
