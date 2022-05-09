@@ -1,4 +1,5 @@
 import { createStore } from 'vuex';
+import allMenu from './menu';
 
 export default createStore({
   state: {
@@ -11,10 +12,14 @@ export default createStore({
   },
   mutations: {
     setIsShowing(state, payload) {
-      const filteredMenu = menu.fiter((item) => item.category === payload);
-      state.isShowing = filteredMenu[0];
+      const filteredMenu = allMenu.filter((item) => item.category === payload);
+      state.isShowing = filteredMenu;
     },
   },
-  actions: {},
-  getters: {},
+  getters: {
+    sortByPriceAscending() {
+      const filered = isShowing.sort((a, b) => a.price - b.price);
+      return filered;
+    },
+  },
 });

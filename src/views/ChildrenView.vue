@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <div class="bg"></div>
+</template>
 
 <script>
 export default {
@@ -6,4 +8,11 @@ export default {
 };
 </script>
 
-<style lang="sss" scoped></style>
+<style lang="scss" scoped>
+.bg {
+  background-image: url('../assets/BG_children.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>

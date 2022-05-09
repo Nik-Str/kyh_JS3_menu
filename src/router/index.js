@@ -16,13 +16,13 @@ const routes = [
     component: ChildrenView,
   },
   {
-    path: '/coupleView',
-    name: 'coupleView',
+    path: '/couple',
+    name: 'couple',
     component: CoupleView,
   },
   {
-    path: '/adultsView',
-    name: 'adultsView',
+    path: '/adults',
+    name: 'adults',
     component: AdultsView,
   },
 ];
