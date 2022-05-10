@@ -1,16 +1,19 @@
 <template>
   <div class="bg">
-    <Menu :menu="$store.state.isShowing" />
+    <Filter />
+    <Menu />
   </div>
 </template>
 
 <script>
 import Menu from '../components/Menu.vue';
+import Filter from '../components/Filter.vue';
 
 export default {
   name: 'AdultsView',
   components: {
     Menu,
+    Filter,
   },
   mounted() {
     this.$store.commit('setIsShowing', 'Adults');
@@ -24,6 +27,5 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 </style>

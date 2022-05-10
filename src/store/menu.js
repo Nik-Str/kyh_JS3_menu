@@ -132,7 +132,7 @@ const menu = [
   {
     id: 30,
     title: 'Eldad Lax',
-    ingredients: 'salad nicoise, sparris, trädgårdstomater, machesallad, cirkulerat ägg, sugarsnaps, nobisdressing',
+    ingredients: 'Salad nicoise, sparris, trädgårdstomater, machesallad, cirkulerat ägg, sugarsnaps, nobisdressing',
     price: 189,
     category: 'Couple',
   },
