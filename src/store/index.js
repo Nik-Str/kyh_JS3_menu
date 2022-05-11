@@ -45,11 +45,26 @@ export default createStore({
       state.cart = cart;
     },
     sortByPriceAscending(state) {
-      const filtered = state.isShowing.sort((a, b) => a.price - b.price);
-      state.isShowing = filtered;
+      const sorted = state.isShowing.sort((a, b) => a.price - b.price);
+      state.isShowing = sorted;
     },
     sortByPriceDescending(state) {
-      const filtered = state.isShowing.sort((a, b) => b.price - a.price);
+      const sorted = state.isShowing.sort((a, b) => b.price - a.price);
+      state.isShowing = sorted;
+    },
+    sortByLetterAscending(state) {
+      const sorted = state.isShowing.sort((a, b) => (a.title < b.title ? -1 : 1));
+      state.isShowing = sorted;
+    },
+    sortByLetterDescending(state) {
+      const sorted = state.isShowing.sort((a, b) => (a.title > b.title ? -1 : 1));
+      state.isShowing = sorted;
+    },
+    resetAll(state) {
+      state.isShowing = state.menu;
+    },
+    showOnlyLactoseFree(state) {
+      const filtered = state.isShowing.filter((item) => item.LactoseFree === true);
       state.isShowing = filtered;
     },
   },

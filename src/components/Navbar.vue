@@ -19,7 +19,9 @@
           <router-link class="link nav-item" to="/adults">Vuxenmeny</router-link>
           <router-link class="link nav-item" to="/couple">Par-meny</router-link>
           <li class="nav-item my-auto cart-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
-            <i class="bi bi-cart fw-bold"></i> {{ getTotalt }}kr
+            <i v-if="getTotalt === 0" class="bi bi-cart fw-bold"></i>
+            <i v-if="getTotalt !== 0" class="bi bi-cart-fill"></i>
+            {{ getTotalt }}kr
           </li>
         </ul>
       </div>

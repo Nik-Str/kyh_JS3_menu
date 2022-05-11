@@ -5,6 +5,7 @@ const menu = [
     ingredients: 'Vispad burrata, granatäpple, grillade vindruvor, pistagenötter, chili & brödsmulor',
     price: 119,
     category: 'Adults',
+    LactoseFree: false,
   },
   {
     id: 11,
@@ -12,6 +13,7 @@ const menu = [
     ingredients: 'Burratina, solmogna tomater, lagrad balsamico, peperoncino & basilika',
     price: 109,
     category: 'Adults',
+    LactoseFree: false,
   },
   {
     id: 12,
@@ -19,6 +21,7 @@ const menu = [
     ingredients: 'Nybakat bröd toppas med handplockade tomater, buffelmozzarella & färsk basilika',
     price: 129,
     category: 'Adults',
+    LactoseFree: false,
   },
   {
     id: 13,
@@ -26,6 +29,7 @@ const menu = [
     ingredients: 'Oxfilé, löjrom, tryffel, parmesan, picklad rödlök, kapris & dijon',
     price: 145,
     category: 'Adults',
+    LactoseFree: false,
   },
   {
     id: 14,
@@ -33,6 +37,7 @@ const menu = [
     ingredients: 'Friterad kronärtskocka, parmesan, limoncellokräm & rostade jordnötter',
     price: 89,
     category: 'Adults',
+    LactoseFree: false,
   },
   {
     id: 15,
@@ -40,6 +45,7 @@ const menu = [
     ingredients: 'Ravioli fylld med Karl-Johansvamp, skogssvamp & parmesansås',
     price: 159,
     category: 'Adults',
+    LactoseFree: false,
   },
   {
     id: 16,
@@ -47,6 +53,7 @@ const menu = [
     ingredients: 'Linguine, krämig pesto, vispad burratina & pistagenötter',
     price: 159,
     category: 'Adults',
+    LactoseFree: true,
   },
   {
     id: 17,
@@ -54,6 +61,7 @@ const menu = [
     ingredients: 'Spaghetti, pancetta, äggula & parmesansås',
     price: 155,
     category: 'Adults',
+    LactoseFree: true,
   },
   {
     id: 18,
@@ -61,6 +69,7 @@ const menu = [
     ingredients: 'Rigatoni, stark salsiccia, tomatsås, syrad grädde, cocktailtomater, chili & parmesan',
     price: 165,
     category: 'Adults',
+    LactoseFree: true,
   },
   {
     id: 19,
@@ -68,15 +77,24 @@ const menu = [
     ingredients: 'Tagliatelle, oxfilé, tryffel & skogsvamp',
     price: 209,
     category: 'Adults',
+    LactoseFree: false,
   },
   //Children
-  { id: 20, title: 'Pankaka', ingredients: 'Pankaka, grädde, jordgubbsylt', price: 95, category: 'Children' },
+  {
+    id: 20,
+    title: 'Pankaka',
+    ingredients: 'Pankaka, grädde, jordgubbsylt',
+    price: 95,
+    category: 'Children',
+    LactoseFree: false,
+  },
   {
     id: 21,
     title: 'Köttbullar & mos',
     ingredients: 'Köttbullar, gräddsås, lingonsylt, mos',
     price: 105,
     category: 'Children',
+    LactoseFree: false,
   },
   {
     id: 22,
@@ -84,6 +102,7 @@ const menu = [
     ingredients: 'Köttfärsås, spagetti, toppat med parmesan',
     price: 85,
     category: 'Children',
+    LactoseFree: false,
   },
   {
     id: 23,
@@ -91,6 +110,7 @@ const menu = [
     ingredients: '100g Hamburgare, pommes frites, dressing',
     price: 99,
     category: 'Children',
+    LactoseFree: true,
   },
   {
     id: 24,
@@ -98,6 +118,7 @@ const menu = [
     ingredients: '2st grillkorvar med egengjort mos.',
     price: 110,
     category: 'Children',
+    LactoseFree: false,
   },
   {
     id: 25,
@@ -105,14 +126,23 @@ const menu = [
     ingredients: 'Kebabkött, pommes frites, sås, sallad',
     price: 75,
     category: 'Children',
+    LactoseFree: true,
   },
-  { id: 26, title: 'Margherita', ingredients: 'Tomatsås, Mozzarellaost', price: 89, category: 'Children' },
+  {
+    id: 26,
+    title: 'Margherita',
+    ingredients: 'Tomatsås, Mozzarellaost',
+    price: 89,
+    category: 'Children',
+    LactoseFree: false,
+  },
   {
     id: 27,
     title: 'Vesuvio',
     ingredients: 'Tomatsås, Mozzarellaost, Skinka',
     price: 119,
     category: 'Children',
+    LactoseFree: true,
   },
   {
     id: 28,
@@ -120,6 +150,7 @@ const menu = [
     ingredients: 'Tomatsås, Mozzarellaost, Champinjoner (Färska)',
     price: 105,
     category: 'Children',
+    LactoseFree: true,
   },
   {
     id: 29,
@@ -127,6 +158,7 @@ const menu = [
     ingredients: 'Sprödbakad tors med pommes frites, sås, sallad',
     price: 95,
     category: 'Children',
+    LactoseFree: false,
   },
   //Couple
   {
@@ -135,6 +167,7 @@ const menu = [
     ingredients: 'Salad nicoise, sparris, trädgårdstomater, machesallad, cirkulerat ägg, sugarsnaps, nobisdressing',
     price: 189,
     category: 'Couple',
+    LactoseFree: false,
   },
   {
     id: 31,
@@ -142,6 +175,7 @@ const menu = [
     ingredients: 'Nötinnanlår från närke, rödbetor, kapris, pepparrot, Dijonaise, krispig potatis, syrad charlottenlök',
     price: 168,
     category: 'Couple',
+    LactoseFree: false,
   },
   {
     id: 32,
@@ -149,6 +183,7 @@ const menu = [
     ingredients: 'Fläskschnitzel, spetskål, melon rättika, gochujang, tonkatsusås, crystal bread',
     price: 178,
     category: 'Couple',
+    LactoseFree: false,
   },
   {
     id: 33,
@@ -156,6 +191,7 @@ const menu = [
     ingredients: 'Serveras med säsongens sallad',
     price: 169,
     category: 'Couple',
+    LactoseFree: false,
   },
   {
     id: 34,
@@ -163,6 +199,7 @@ const menu = [
     ingredients: 'Briochebröd, caesardressing, gemsallad, picklad gurka, lökringar, JB`s BBQ-sås',
     price: 179,
     category: 'Couple',
+    LactoseFree: false,
   },
   {
     id: 35,
@@ -170,6 +207,7 @@ const menu = [
     ingredients: 'Blåmusslor, kokosgrädde, citrongräs, chilli, ingefära, limeblad, räkchips',
     price: 168,
     category: 'Couple',
+    LactoseFree: true,
   },
   {
     id: 36,
@@ -177,6 +215,7 @@ const menu = [
     ingredients: 'Linguine, pilgrimsmusslor, scampi, bläckfisk, blåmusslor, vitt vin, tomat, basilika',
     price: 208,
     category: 'Couple',
+    LactoseFree: true,
   },
   {
     id: 37,
@@ -184,6 +223,7 @@ const menu = [
     ingredients: 'Marinerad kycklingspett, melonsallad, limeyoghurt, mango chutney, sötpotatis krisp',
     price: 195,
     category: 'Couple',
+    LactoseFree: true,
   },
   {
     id: 38,
@@ -191,6 +231,7 @@ const menu = [
     ingredients: 'Sparris & ramslöksrisotto, dillpesto, torkade olivsmulor, sommarcrudité',
     price: 239,
     category: 'Couple',
+    LactoseFree: false,
   },
   {
     id: 39,
@@ -198,6 +239,7 @@ const menu = [
     ingredients: 'Oxfilé från lokalt slakteri, potatismos, bea',
     price: 249,
     category: 'Couple',
+    LactoseFree: true,
   },
 ];
 
